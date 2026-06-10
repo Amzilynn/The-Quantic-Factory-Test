@@ -1,17 +1,34 @@
 # Vélib' Métropole – Spatial Distribution Analysis
 
-This repository contains an analysis of Vélib' bike-share stations in Paris, examining their spatial distribution between the city center and the periphery.
+##  Objective
 
-## Prerequisites
+This project analyzes whether Vélib' bike-share stations in Paris are uniformly distributed or whether there are spatial differences between the city center and the periphery.
 
-To run this notebook, you will need **Python** installed on your machine. We recommend Python 3.8 or higher.
+---
+
+##  Methodology
+
+The analysis follows a complete data science workflow:
+
+- Data extraction from the Paris open data API
+- Data cleaning and preprocessing
+- Feature engineering (computing distance from the city center)
+- Classification of stations into:
+  - Central (≤ 5 km)
+  - Peripheral (> 5 km)
+- Statistical comparison of station capacities
+- Data visualization (maps, bar charts, scatter plots, boxplots)
+- Statistical testing using the Mann–Whitney U test
+
+---
 
 ## Setup and Installation
 
-1. **Clone the repository** :
-   ```bash
-   git clone https://github.com/Amzilynn/The-Quantic-Factory-Test.git
-   cd The-Quantic-Factory-Test
+Clone the repository:
+
+```bash
+git clone https://github.com/Amzilynn/The-Quantic-Factory-Test.git
+cd The-Quantic-Factory-Test
    ```
 
 2. **Install the required dependencies**:
@@ -19,5 +36,8 @@ To run this notebook, you will need **Python** installed on your machine. We rec
    ```bash
    pip install -r requirements.txt
    ```
+
+##  Data Source
+Paris Open Data: https://opendata.paris.fr/pages/home/
 
 
